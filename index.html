@@ -1,58 +1,356 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Hanna & Gustavs bröllop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-
-@font-face {
-	font-family: 'Cherolina';
-	src: url('fonts/Cherolina.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+      @font-face {
+        font-family: "Cherolina";
+        src: url("vendor/fonts/Cherolina.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
     </style>
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGFKL0EH14"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="vendor/css/normalize.min.css" />
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/css/flexslider.css" />
+    <link rel="stylesheet" href="vendor/css/animate.min.css" />
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
 
-  gtag('config', 'G-ZGFKL0EH14');
-</script>
-<body id="top">
-<section class="hero">
-    <section class="navigation">
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
-                    <!-- <img src="img/logo-lg.png"> -->
-                    <p class="intro">Hanna o Gustav</p>
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
-                </div>
+    <link rel="stylesheet" href="css/queries.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="vendor/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-ZGFKL0EH14"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-ZGFKL0EH14");
+  </script>
+  <body id="top">
+    <section class="hero">
+      <section class="navigation">
+        <header>
+          <div class="header-content">
+            <div class="header-nav">
+              <nav>
+                <ul class="primary-nav">
+                  <li><a href="#events">Program</a></li>
+                  <li><a href="#map">Mariebergsskogen</a></li>
+                  <li><a href="#accommodation">Boende</a></li>
+                  <li><a href="#party">Festen</a></li>
+                  <li><a href="#gifts">Gåvor</a></li>
+                </ul>
+              </nav>
             </div>
+            <div class="navicon">
+              <a class="nav-toggle" href="#"><span></span></a>
+            </div>
+          </div>
+        </header>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="hero-content text-center">
+              <p class="intro">Hanna o Gustav</p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-</body>
+      </div>
+    </section>
+
+    <section id="invitation" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Nu gifter vi oss</h3>
+            <p style="margin-block-end: 0; padding-bottom: 0">
+              <strong class="date">2023-08-05</strong>
+            </p>
+            <p style="margin-block-start: 0">
+              Välkommen att fira tillsammans med oss!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section-padding" id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="header">Program</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="wp3">
+              <p><strong>Fredag 4/8</strong></p>
+
+              <h5>Get together <span class="time">17:00-22:00</span></h5>
+              <p>
+                Ni är många som kommer till Karlstad från andra städer och vi
+                vill träffa er så mycket det bara går. Därför finns det
+                möjlighet att ses redan fredag kväll, för er som vill och kan.
+                <br />
+                <br />
+                Vi ses hemma hos oss i "Blå huset" (en gemensamhetslokal) där vi
+                bjuder på lättare mat och dryck.
+                <br />
+                <br />
+                Hem till oss tar man sig enklast med bil eller
+                <a href="https://www.varmlandstrafik.se/" target="_blank"
+                  >buss (Linje 2)</a
+                >
+                och går av på hållplats Soldattorpet.
+                <br />
+                <br />
+                <a
+                  href="https://www.google.com/maps/place/Soldattorpet+37,+653+50+Karlstad/@59.4233753,13.4494578,17.27z/data=!4m5!3m4!1s0x465cb37fcc50f7d5:0xc41b92a451246a3b!8m2!3d59.4242255!4d13.4522546"
+                  target="_blank"
+                  >Vägbeskrivning</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 leftborder rightborder">
+            <div class="wp4">
+              <p><strong>Lördag 5/8</strong></p>
+
+              <h5>Vigsel <span class="time">16:00</span></h5>
+              <p>Vigseln kommer äga rum i Acksjöns kapell.</p>
+            </div>
+            <div class="wp4">
+              <h5>Bröllopsfest <span class="time">17:00-02:00</span></h5>
+              <p>
+                På restaurang Terassen kommer vi börja med mingel och en skål.
+                Sen sätter vi oss till bords för att njuta av en middag med
+                tillhörande dryck serverad av Matstudion.
+              </p>
+
+              <p>
+                <span style="font-weight: 500">Klädsel: </span
+                ><a
+                  href="https://sv.wikipedia.org/wiki/Kl%C3%A4dkod#Kavaj"
+                  target="_blank"
+                  >Kavaj</a
+                >
+              </p>
+              <p>Läs mer om <a href="#party">Festen</a> nedan.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="wp4">
+              <p><strong>Söndag 6/8</strong></p>
+
+              <h5>Frukost <span class="time">ca 09:30</span></h5>
+              <p>
+                Söndag morgon behövs det en stadig och god frukost. Hanna och
+                Gustav kommer att bo på
+                <a
+                  href="https://elite.se/sv/hotell/karlstad/stadshotellet/"
+                  target="_blank"
+                  >Elite Statshotellet</a
+                >. Gör oss gärna sällskap till frukosten.
+                <br />
+                <br />
+                Vi har bokat en avskild del av hotellet där vi får äta frukost
+                och umgås i lugn och ro. För er som inte bor på hotellet går det
+                bra att ansluta till en kostnad av 155kr/person.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="osa col-md-12">
+            <p>
+              OSA senast 2023-06-12 till
+              <a href="mailto:osa@hannagustav.se">osa@hannagustav.se</a>
+              <br />
+              Ange om ni vill vara med även fredag & söndag samt er favoritlåt
+              att dansa till!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="section-padding">
+      <div class="text-center">
+        <h3>Mariebergsskogen</h3>
+        <p>
+          Mariebergsskogen är Karlstads statspark och en plats som betyder
+          mycket för oss.<br />
+          Både vigsel och bröllopsfest kommer att äga rum inne i parken. <br />
+          <strong>Bil</strong><br />Parkering finns precis utanför parkens entré
+          och är gratis <br />
+          <strong>Buss</strong><br /><a
+            href="https://www.varmlandstrafik.se/"
+            target="_blank"
+            >Linje 12</a
+          >
+          avgår från
+          <a
+            href="https://www.google.com/maps/place/Stora+Torget,+Karlstad/@59.3807791,13.500838,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3d6e9b5d2b1:0xcf4bcf550baa4273!8m2!3d59.3807832!4d13.5031629"
+            target="_blank"
+            >Stora torget</a
+          >
+          och Mariebergsskogen är linjens ändhållplats <br />
+          <strong>Båt</strong><br /><a
+            href="https://sommarresor.varmlandkollektivtrafik.se/batbuss.html"
+            target="_blank"
+            >Båtbuss linje 91</a
+          >
+          tar dig över Klarälvens delta från centrum till Mariebergsskogen
+          <br />
+        </p>
+      </div>
+      <div id="map-canvas"></div>
+    </section>
+
+    <section id="accommodation" class="section-padding">
+      <div class="text-center">
+        <h3>Boende</h3>
+        <!-- <p>It's way easier than you think!</p> -->
+        <p>
+          <strong>Hotell</strong><br />I princip alla hotell i centrala Karlstad
+          är lämpliga att bo på om man vill bo nära Mariebergsskogen. <br />
+          Lediga hotellrum hittar ni enklast på
+          <a
+            href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaMgBiAEBmAEJuAEHyAEM2AEB6AEB-AELiAIBqAIDuALBwqifBsACAdICJDJjOGEwMmMyLWEwY2EtNDU3ZS1iY2M0LWVlNjlmZGU1MDM2MNgCBuACAQ&sid=ddf167397951e5a1881acb240c97c526&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaMgBiAEBmAEJuAEHyAEM2AEB6AEB-AELiAIBqAIDuALBwqifBsACAdICJDJjOGEwMmMyLWEwY2EtNDU3ZS1iY2M0LWVlNjlmZGU1MDM2MNgCBuACAQ%26sid%3Dddf167397951e5a1881acb240c97c526%26sb_price_type%3Dtotal%26%26&ss=Karlstad%2C+V%C3%A4rmland%2C+Sweden&is_ski_area=&checkin_year=2023&checkin_month=8&checkin_monthday=4&checkout_year=2023&checkout_month=8&checkout_monthday=6&efdco=1&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&search_pageview_id=3c3951e15d0401d7&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0&ac_position=0&ac_langcode=en&ac_click_type=b&ac_meta=GhAzYzM5NTFlMTVkMDQwMWQ3IAAoATICZW46BWthcmxzQABKAFAA&dest_id=-2493635&dest_type=city&iata=KSD&place_id_lat=59.37967&place_id_lon=13.500731&search_pageview_id=3c3951e15d0401d7&search_selected=true&ss_raw=karls"
+            target="_blank"
+            >booking.com</a
+          >.
+          <br />
+          <br />
+            Hanna & Gustav kommer att bo på
+            <a
+              href="https://elite.se/sv/hotell/karlstad/stadshotellet/"
+              target="_blank"
+              >Elite Statshotellet</a
+          >. 
+          <br />
+            Om ni också önskar bo där kan ni använda <a class="tbd" href="" target="_blank">denna länk för att få
+            10% i rabatt</a> på Elites standardpriser. 
+            
+          <br />
+            Ev. får man ännu bättre pris
+            som man registrerar sig som medlem hos dem så det är värt att
+            jämföra alternativen.
+          <br />
+          <br />
+          <i>
+            Det är en stor fotbollscup i Karlstad denna helg och det är därför
+            klokt att boka rum tidigt om man önskar bo på hotell.
+          </i>
+          <br />
+          <br />
+          <strong>Camping</strong><br />
+          Vill man bo på camping är
+          <a href="https://bomstadbaden.se/" target="_blank">Bomstadbaden</a>
+          trevligt.
+        </p>
+      </div>
+    </section>
+
+    <section class="events section-padding" id="party">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="header">Festen</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="wp3">
+              <h5>Mat & dryck</h5>
+              <p>
+                Vi bjuder på middag med dryck till maten.<br />
+                Dryck finns efter det att köpa i restaurangens bar. All form av
+                medhavd alkohol är tyvärr förbjuden.
+              </p>
+              <p>
+                Lokalen stänger kl 02:00 och sista serveringen i baren sker kl
+                01:30.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 leftborder">
+            <div class="wp4">
+              <h5>underhållning</h5>
+              <p>
+                Vi uppskattar all form av underhållning och uppmuntrar gärna
+                till sång och glada hejarop. Önskar ni hålla tal eller liknande
+                anmäler ni det till våra toastmasters.
+                <br />
+                <br />
+                <strong>Toastmasters:</strong>
+                <br />
+                Andreas Anderljung |
+                <a href="mailto:andreas.anderljung@gmail.com"
+                  >andreas.anderljung@gmail.com</a
+                > | 0709 29 91 88
+                <br />
+                Johan Ekberg |  
+                <a href="mailto:johan@ekbergs.net"
+                  >johan@ekbergs.net</a
+                >
+              </p>
+              <p>Efter middagen förvandlas lokalen till dansgolv!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="section-padding">
+      <div class="text-center">
+        <h3>Gåvor</h3>
+        <p>
+          För oss är det mest värdefulla att ni vill vara med under vår stora
+          dag.
+          <br />
+          Om ni ändå vill ge oss en gåva blir vi glada för vad som helst eller
+          ett bidrag till vår bröllopsresa.
+          <br />
+          Har ni frågor eller funderingar kan ni kontakta <br />
+          Eva Eriksson | 0706 22 00 33
+        </p>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="vendor/js/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/jquery.flexslider-min.js"></script>
+    <script src="vendor/js/jquery.waypoints.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+  </body>
 </html>
